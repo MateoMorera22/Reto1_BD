@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/mateo/OneDrive/Documentos/Git/BD_EAN_RETO1/base_de_datos.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="125"/><column_width id="3" width="2277"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,9:mainPROVEEDOR"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="PRODUCTO" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="115"/><column index="2" value="165"/><column index="3" value="137"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="PROVEEDOR" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="2" value="76"/><column index="3" value="134"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">select PRODUCTO.id_producto,
+PRODUCTO.nombre_producto,
+PRODUCTO.descripcion,PROVEEDOR.nombre
+from PRODUCTO INNER JOIN PROVEEDOR
+on PRODUCTO.id_proveedor=PROVEEDOR.id_proveedor
+
+select id_producto,
+nombre_producto FROM PRODUCTO
+
+INSERT INTO PRODUCTO(id_producto, nombre_producto, 
+descripcion, id_proveedor)
+VALUES(NULL,'Televisor 4k','Televisor 4k de Samsung',7);
+
+
+
+INSERT INTO PRODUCTO VALUES()
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
